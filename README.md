@@ -19,37 +19,33 @@ python -V
 ```
 cd where-the-project-is-located-on-your-machine
 ```
-4- Go to the API folder
-```
-cd hateguard-api
-```
-5- Create a virtual environment
+4- Create a virtual environment
 ```
 python -m venv venv
 ```
-6- Activate the virtual environment
+5- Activate the virtual environment
 .\venv\Scripts\activate
 
-7- Install pip for the virtual environment
+6- Install pip for the virtual environment
 ```
 python -m pip install --upgrade pip
 ```
-8- Install the required packages
+7- Install the required packages
 ```
 python -m pip install -r requirements.txt
 ```
-9- Create ".env" file that includes:
+8- Create ".env" file that includes:
 ```
 SECRET_KEY="YOUR SECRET KEY"
 model_name="microsoft/MiniLM-L12-H384-uncased"
 onnx_model_name="model_int8.onnx"
 ```
-10- Run the API
+9- Run the API
 ```
 python -m flask --app ./app.py run
 ```
-11- In your browser go to:
+10- In your browser go to:
 http://127.0.0.1:5000
 you should see a page saying: "Welcome to the HateGuard API By Mazen Elabd"
 
-Then next step is to run the [frontend](https://github.com/mazenelabd/HateGuard/)
+The next step is to run the [frontend](https://github.com/mazenelabd/HateGuard/)
